@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Anasayfa</a>
+                </li>
+                <li>
+                    <a href="/detay.html">Karakterler</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery-container">
+            <div class="image-container">
+                <img id="main-image" src="img/thor1.jpg" alt="Ana Resim">
+                <div class="image-info">
+                    <h3>THOR</h3>
+                    <p>Kuzey Cermenleri'nin teleffuzu ile Thor, diğer Cermen halklarının teleffuzları ile Donar, Donner,
+                        Dunor, Thunraz, Thunor; çeşitli Cermen mitolojilerinde yer alan gök gürültüsü tanrısı.[1] Thor
+                        hakkındaki bilgilerin çoğu Cermen mitolojilerinde çok önemli bir yeri olan İskandinav
+                        mitolojisinde geçmektedir. Megingjord adlı sihirli bir kemeri ve Tanngniost ve Tanngnisrir (Diş
+                        Çatırdatan ve Diş Gıcırdatan) denilen iki keçisi vardır. Mjölnir adlı efsanevi çekici
+                        kullanmaktadır.[1] <a href="/detay.html">Daha fazla göster...</a> </p>
+                </div>
+            </div>
+
+            <div class="thumbnail-container">
+                <img src="img/thor2.jpg" alt="Küçük Resim 1" onmouseover="changeImage('img/thor2.jpg')">
+                <img src="img/thor3.jpg" alt="Küçük Resim 2" onmouseover="changeImage('img/thor3.jpg')">
+                <img src="img/thor4.jpg" alt="Küçük Resim 3" onmouseover="changeImage('img/thor4.jpg')">
+                <img src="img/thor5.jpg" alt="Küçük Resim 4" onmouseover="changeImage('img/thor5.jpg')">
+            </div>
+
+        </div>
+    </main>
+
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+        }
+    </script>
+</body>
+
+</html>
